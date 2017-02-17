@@ -74,6 +74,9 @@ func Enable(pattern string) {
 }
 
 func IsEnabled(name string) bool {
+	if reg == nil {
+		return false
+	}
 	return reg.MatchString(name)
 }
 
