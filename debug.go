@@ -73,6 +73,10 @@ func Enable(pattern string) {
 	enabled = true
 }
 
+func IsEnabled(name string) bool {
+	return reg.MatchString(name)
+}
+
 // Debug creates a debug function for `name` which you call
 // with printf-style arguments in your application or library.
 func Debug(name string) DebugFunction {
