@@ -4,6 +4,9 @@ on:
     types: [labeled]
     branches:
       - 'master'
+permissions:
+  id-token: write
+  contents: read
 jobs:
   release:
     uses: DispatchMe/github-actions/.github/workflows/release-v2.yml@master
