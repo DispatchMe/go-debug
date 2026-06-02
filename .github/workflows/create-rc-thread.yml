@@ -1,0 +1,10 @@
+name: create-rc-thread
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - 'master'
+jobs:
+  create-rc-thread:
+    uses: DispatchMe/github-actions/.github/workflows/create-rc-thread.yml@master
+    secrets: inherit
