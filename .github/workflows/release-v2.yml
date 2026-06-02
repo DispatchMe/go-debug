@@ -1,0 +1,10 @@
+name: release
+on:
+  pull_request:
+    types: [labeled]
+    branches:
+      - 'master'
+jobs:
+  release:
+    uses: DispatchMe/github-actions/.github/workflows/release-v2.yml@master
+    secrets: inherit
