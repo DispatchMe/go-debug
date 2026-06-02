@@ -1,8 +1,0 @@
-name: golang-test
-on:
-  push:
-    branches: ['*', '**']
-jobs:
-  golang-test:
-    uses: DispatchMe/github-actions/.github/workflows/golang-test.yml@master
-    secrets: inherit
